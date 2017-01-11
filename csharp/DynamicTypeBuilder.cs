@@ -193,7 +193,7 @@ namespace Nequeo.Reflection
             Type type = GetDynamicClass(properties, methods);
 
             // Return the new instance of the type.
-            return TypeAccessor.CreateInstance(type);
+            return Activator.CreateInstance(type);
         }
 
         /// <summary>
